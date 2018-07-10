@@ -36,12 +36,6 @@ body {
   grid-gap: 36px;
 }
 
-.logo {
-  /* position: fixed;
-  bottom: 12px;
-  right: 12px; */
-}
-
 .logo img {
   height: 72px;
   margin-bottom: 18px;
