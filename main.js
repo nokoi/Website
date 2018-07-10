@@ -1,21 +1,20 @@
-var typed = new Typed("#typed", {
-  stringsElement: "#typed-strings",
-  strings: ["NOKOI is a game studio.", "NOKOI is a collective."],
-<<<<<<< HEAD
-  startDelay: 1000,
-  typeSpeed: 60,
-=======
+const typed = new Typed("#typed", {
+	stringsElement: "#typed-strings",
 	typeSpeed: 40,
+	showCursor: false,
+	startDelay: 2200,
 	backSpeed: 20,
->>>>>>> a640a1940be94fad7ae7fadd6bf95ddd78741ec9
-  smartBackspace: true
+	smartBackspace: true
 });
 
-$(function() {
-<<<<<<< HEAD
-  $(".right").hide(0).delay(10000).fadeIn(400);
-=======
-  $(".right").hide(0).delay(7125).fadeIn(400);
->>>>>>> a640a1940be94fad7ae7fadd6bf95ddd78741ec9
-  // $(".logo").hide(0).delay(7500).fadeIn(400);
-});
+setTimeout(() => {
+	$('#logo').fadeOut(200)
+}, 2000)
+
+setTimeout(() => {
+	$('#content').fadeIn(200)
+}, 2200)
+
+$(() => {
+  $(".right").hide(0).delay(7125+2000).fadeIn(400);
+})
