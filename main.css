@@ -16,13 +16,23 @@
   background: rgba(255,255,255,0.1);
 }
 
+#logo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
 body {
   width: 100vw;
   height: 100vh;
   background: #000;
   color: #fff;
   padding: 12px;
-  display: grid;
+}
+
+#content {  
+	display: grid;
   grid-gap: 36px;
 }
 
@@ -32,7 +42,7 @@ body {
   right: 12px; */
 }
 
-.logo img, #logo {
+.logo img {
   height: 72px;
   margin-bottom: 18px;
 }
@@ -87,7 +97,7 @@ a:hover {
     font: 400 60px/64px "AUTHENTIC Sans", sans-serif;
   }
 
-  body {
+  #content {
     grid-template-columns: 445px 1fr;
     grid-gap: 36px;
   }
