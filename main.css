@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "AUTHENTIC Sans";
+  src: url("asset/font/AUTHENTIC-Sans.woff2") format("woff2"),
+       url("asset/font/AUTHENTIC-Sans.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: url("asset/cursor.svg"), auto;
+}
+
+*::selection {
+  background: rgba(255,255,255,0.1);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  display: grid;
+  grid-gap: 36px;
+}
+
+.logo {
+  /* position: fixed;
+  bottom: 12px;
+  right: 12px; */
+}
+
+.logo img, #logo {
+  height: 72px;
+  margin-bottom: 18px;
+}
+
+.logo.clear {
+  display: none;
+}
+
+h1 {
+  font: 400 36px/40px "AUTHENTIC Sans", sans-serif;
+}
+
+h2, #typed {
+  font: 400 24px/30px "Space Mono", monospace;
+}
+
+.margin24, #typed:last-of-type {
+  margin-bottom: 24px;
+}
+
+.typed-cursor, .typed-cursor--blink {
+  display: none;
+}
+
+a {
+  transition: color 0.2s ease, letter-spacing 0.2s ease;
+  letter-spacing: 0px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.2);
+}
+
+a:hover {
+  transition: color 0.1s ease, letter-spacing 0.1s ease;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,1.0);
+}
+
+@media screen and (min-width:470px) {
+  h1 {
+    font: 400 48px/48px "AUTHENTIC Sans", sans-serif;
+  }
+}
+
+/* @media screen and (min-width:600px) {
+  h1 {
+    font: 400 60px/64px "AUTHENTIC Sans", sans-serif;
+  }
+} */
+
+@media screen and (min-width:1010px) {
+  h1 {
+    font: 400 60px/64px "AUTHENTIC Sans", sans-serif;
+  }
+
+  body {
+    grid-template-columns: 445px 1fr;
+    grid-gap: 36px;
+  }
+
+  .logo.clear {
+    display: block;
+  }
+}
