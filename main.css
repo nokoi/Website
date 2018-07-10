@@ -23,9 +23,12 @@
 	transform: translate(-50%, -50%)
 }
 
+html { background: #000 }
+
 body {
 	width: 100vw;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
   height: 100vh;
   background: #000;
   color: #fff;
@@ -83,7 +86,7 @@ a:hover {
 
 ::-webkit-scrollbar {
 	background: #000;
-	width: 10px;
+	width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
