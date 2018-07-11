@@ -1,17 +1,17 @@
-var typed
-setInterval(() => {
-	$('#content').fadeIn(1)
-	$('#logo').fadeOut(200)
-	typed = new Typed("#typed", {
-		stringsElement: "#typed-strings",
-		typeSpeed: 40,
-		backSpeed: 20,
-		smartBackspace: true
-	});
-}, 2000)
+const typed = new Typed("#typed", {
+	stringsElement: "#typed-strings",
+	typeSpeed: 40,
+	showCursor: false,
+	startDelay: 2200,
+	backSpeed: 20,
+	smartBackspace: true
+});
 
-$(function() {
-  $(".right").hide(0).delay(7125+200).fadeIn(400);
->>>>>>> origin/atte_rebuild
-  // $(".logo").hide(0).delay(7500).fadeIn(400);
+setTimeout(() => {
+	$('#logo').fadeOut(200)
+	$('#content').fadeIn(1)
+}, 2000);
+
+$(() => {
+  $(".right").hide(0).delay(7125+2200+250).fadeIn(400);
 });
