@@ -12,8 +12,9 @@ const typed = new Typed("#typed", {
 // 	$('#content').fadeIn(1)
 // }, 2000);
 
+$('#logo').delay(2000).fadeOut(200),
+$('#content').hide(0).delay(2000).show(0),
+
 $(() => {
-  $('#logo').delay(2000).fadeout(200),
-  $('#content').delay(2000).show(),
   $(".right").hide(0).delay(7125+2200+250).fadeIn(400);
 });
