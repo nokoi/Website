@@ -40,6 +40,11 @@ body {
   grid-gap: 36px;
 }
 
+.left {
+  background: #000;
+  box-shadow: 0 -4px 16px 16px #000;
+}
+
 .logo img {
   height: 72px;
   margin-bottom: 18px;
@@ -57,7 +62,7 @@ h2, #typed {
   font: 400 24px/30px "Space Mono", monospace;
 }
 
-.margin24, #typed:last-of-type {
+.margin24 {
   margin-bottom: 24px;
 }
 
