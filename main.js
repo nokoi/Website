@@ -7,14 +7,8 @@ const typed = new Typed("#typed", {
 	smartBackspace: true
 });
 
-// setTimeout(() => {
-// 	$('#logo').fadeOut(200)
-// 	$('#content').fadeIn(1)
-// }, 2000);
-
-$('#logo').delay(2000).fadeOut(200),
-$('#content').hide(0).delay(2000).show(0),
-
 $(() => {
-  $(".right").hide(0).delay(7125+2200+250).fadeIn(400);
+	$('#logo').delay(2000).fadeOut(200);
+	$('#content').hide(0).delay(2000).show(0);
+	$(".right").hide(0).delay(7125+2200+250).fadeIn(400);
 });
