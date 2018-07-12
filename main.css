@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
-  cursor: url("asset/cursor.svg"), auto;
+  cursor: url("asset/cursor.svg") 12 12, auto;
 }
 
 *::selection {
@@ -63,7 +63,7 @@ h2, #typed {
 }
 
 .margin24 {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .typed-cursor, .typed-cursor--blink {
