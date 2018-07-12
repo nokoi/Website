@@ -4,6 +4,12 @@
        url("asset/font/AUTHENTIC-Sans.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Lab Mono";
+  src: url("asset/font/labmono-regular-web.woff2") format("woff2"),
+       url("asset/font/labmono-regular-web.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +65,7 @@ h1 {
 }
 
 h2, #typed {
-  font: 400 24px/30px "Space Mono", monospace;
+  font: 400 24px/30px "Lab Mono", monospace;
 }
 
 .margin24 {
@@ -118,7 +124,7 @@ a:hover {
   }
 
   #content {
-    grid-template-columns: 445px 1fr;
+    grid-template-columns: 500px 1fr;
     grid-gap: 36px;
   }
 
