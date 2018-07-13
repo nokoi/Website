@@ -124,7 +124,7 @@ a:hover {
   }
 
   #content {
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 400px 1fr;
     grid-gap: 36px;
   }
 
