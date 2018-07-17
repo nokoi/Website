@@ -13,3 +13,5 @@ $(() => {
 	$("#content").hide(0).delay(2500).show(0);
 	$(".right").hide(0).delay(8000).fadeIn(400);
 });
+
+// javascript ? ! LOL
